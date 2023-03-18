@@ -1,0 +1,32 @@
+body {
+    background-color: #CCCCFF;
+    color: #FF4444;
+}
+
+div.menu {
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    font-size: 30px;
+    color: white;
+}
+
+a:link {
+    font-size: 30px;
+    color: white;
+    border-left: 1px;
+    text-decoration: none;
+}
+
+a:visited {
+    font-size: 30px;
+    color: white;
+    border-left: 1px;
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 30px;
+    color: #dddddd;
+    text-decoration: none;
+}
