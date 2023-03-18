@@ -6,12 +6,14 @@
 package Models;
 
 /**
- *
  * @author Lab03c
  */
 public class User {
-    
+
     private int cod;
+    private String login;
+    private String password;
+    private String name;
 
     public int getCod() {
         return cod;
@@ -20,11 +22,7 @@ public class User {
     public void setCod(int cod) {
         this.cod = cod;
     }
-    private String login;
-    private String password;
-    private String name;
-    
-    
+
     public String getLogin() {
         return login;
     }

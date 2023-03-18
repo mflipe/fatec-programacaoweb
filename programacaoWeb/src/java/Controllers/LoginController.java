@@ -6,19 +6,19 @@
 package Controllers;
 
 import Models.User;
+import Utils.SignUp;
 
 /**
  *
  * @author Lab03c
  */
 public class LoginController {
-    
+
+    private SignUp _singUpService = new SignUp();
+
     public User isUserValid(User user) {
 
-        User newUser = new User();
-        newUser.setLogin("teste");
-        newUser.setName("Nome do User");
-        newUser.setPassword("teste");
+        User newUser = _singUpService.getUser(user.getLogin());
         
         boolean isValid = user.getLogin().equals(newUser.getLogin()) &&
                           user.getPassword().equals(newUser.getPassword());
