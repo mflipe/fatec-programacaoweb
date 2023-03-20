@@ -11,9 +11,16 @@ import java.util.logging.Logger;
 
 public class SignUp {
 
+    public SignUp() {
+    }
+
     private final Connection dbContext = DbContext.getContext();
 
-    public void createUser(User user) {]
+    /**
+     *
+     * @param user
+     */
+    public void createUser(User user) {
         PreparedStatement statement;
         String sqlCommand = "insert into usuario (nome, login, senha) values (?, ?, ?)";
 
@@ -50,6 +57,7 @@ public class SignUp {
 
         int i = 1;
         try {
+            Connection dbContext = DbContext.getContext();
             st = dbContext.prepareStatement(sqlCommand);
             st.setString(i, login);
             res = st.executeQuery();

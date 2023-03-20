@@ -7,6 +7,7 @@ package Controllers;
 
 import Models.User;
 import Utils.SignUp;
+import java.util.Optional;
 
 /**
  *
@@ -17,16 +18,17 @@ public class LoginController {
     private SignUp _singUpService = new SignUp();
 
     public User isUserValid(User user) {
-
         User newUser = _singUpService.getUser(user.getLogin());
-        
-        boolean isValid = user.getLogin().equals(newUser.getLogin()) &&
-                          user.getPassword().equals(newUser.getPassword());
-        
-        if ( isValid ) {
-            return newUser;
+
+        if ( newUser != null ) {
+            boolean isValid = user.getLogin().equals(newUser.getLogin()) &&
+                              user.getPassword().equals(newUser.getPassword());
+
+            if ( isValid ) {
+                return newUser;
+            }
         }
-                
+       
         return null;
     }
     

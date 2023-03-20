@@ -3,7 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/lab03c/Documents/repos/Arquitetura-de-Software/01%20-%20programacaoWeb/Cesar_01_2023/programacaoWeb/src/java/Login.java</file>
+            <file>file:/Users/mini_01/Developer/fatec-programacaoweb/programacaoWeb/src/java/Utils/SignUp.java</file>
+            <file>file:/Users/mini_01/Developer/fatec-programacaoweb/programacaoWeb/src/java/Controllers/LoginController.java</file>
+            <file>file:/Users/mini_01/Developer/fatec-programacaoweb/programacaoWeb/src/java/Utils/DbContext.java</file>
+            <file>file:/Users/mini_01/Developer/fatec-programacaoweb/programacaoWeb/src/java/Servlets/Login.java</file>
         </group>
     </open-files>
 </project-private>
